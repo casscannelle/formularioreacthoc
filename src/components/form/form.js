@@ -87,7 +87,7 @@ function Form() {
     <div className='container-wrapper'>
       <div className='container-form'>
         <form>
-        <h1 className='form_h1'>Preencha seus dados</h1>
+        <h1 className='form_h1'>Faça Sua Inscrição</h1>
         <label>Nome:</label>
         <input className='form_input' type="text" name="nome" value={inputValue.nome} onChange={handleChange} required />
         {showAnswers || !errors.nome ? null : <p className="error-message">{errors.nome}</p>}
@@ -118,30 +118,16 @@ function Form() {
       </div>
       <div className='container-form'>
         <form>
-        <h1 className='form_h1'>Preencha seus dados</h1>
+        <h1 className='form_h1'>Deixe sua dúvida</h1>
         <label>Nome:</label>
         <input className='form_input' type="text" name="nome" value={inputValue.nome} onChange={handleChange} required />
         {showAnswers || !errors.nome ? null : <p className="error-message">{errors.nome}</p>}
-        <label>Idade:</label>
-        <input className='form_input' type="number" name="idade" value={inputValue.idade} onChange={handleChange} min="0" required />
-        {showAnswers || !errors.idade ? null : <p className="error-message">{errors.idade}</p>}
         <label>E-mail:</label>
         <input className='form_input' type="email" name="email" value={inputValue.email} onChange={handleChange} required />
         {showAnswers || !errors.email ? null : <p className="error-message">{errors.email}</p>}
-        <label>Gênero</label>
-        <div>
-          <input type='radio' name="gender" value="Feminino" id="feminino" checked={inputValue.gender === "Feminino"} onChange={handleChange} />
-          <label htmlFor="feminino">Feminino</label>
-        </div>
-        <div>
-          <input type='radio' name="gender" value="Masculino" id="masculino" checked={inputValue.gender === "Masculino"} onChange={handleChange} />
-          <label htmlFor="masculino">Masculino</label>
-        </div>
-        <div>
-          <input type='radio' name="gender" value="Não informado" id="naoinformado" checked={inputValue.gender === "Não informado"} onChange={handleChange} />
-          <label htmlFor="naoinformado">Prefiro não informar</label>
-        </div>
-        {showAnswers || !errors.gender ? null : <p className="error-message">{errors.gender}</p>}
+        <label>Dúvida:</label>
+        <input className='form_input' type="textarea" name="duvida" value={inputValue.duvida} onChange={handleChange} required />
+        {showAnswers || !errors.nome ? null : <p className="error-message">{errors.duvida}</p>}
         <button className='btn' type="submit" onClick={handleSubmit}>
             Enviar
           </button>
