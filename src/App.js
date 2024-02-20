@@ -1,10 +1,11 @@
-import './App.css';
-import Form from './components/form/form';
+import React from 'react';
 
 function App() {
+  
   return (
     <div>
-      <Form />
+    
+      
     </div>
   );
 }
