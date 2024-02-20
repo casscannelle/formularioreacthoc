@@ -25,18 +25,13 @@ h3 {
   margin-top: -12px;
 }
 
-.container-form,
-.container-answer {
+.form-container {
   max-width: 360px;
   width: 100%;
   background: #ffffff5b;
   border-radius: 15px;
   padding: 25px 25px;
   margin-top: 5%;
-}
-
-.hide-container-answer {
-  display: none;
 }
 
 .container-wrapper {

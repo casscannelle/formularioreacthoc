@@ -1,19 +1,17 @@
 import React from 'react';
-import Inscricao from './components/formInscricao/formInscricao';
-import Comentario from './components/formComentario/formComentario';
-import Form from './components/hoc/hoc';
+import FormComponent1 from './components/FormComponent1/FormComponent1';
+import FormComponent2 from './components/FormComponent2/FormComponent2';
 
-function App() {
-  
+const App = () => {
   return (
     <div>
-    
-      <Inscricao />
-      <Comentario />
-      <Form />
-      
+      <h2>Form 1</h2>
+      <FormComponent1 />
+
+      <h2>Form 2</h2>
+      <FormComponent2 />
     </div>
   );
-}
+};
 
 export default App;
